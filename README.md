@@ -3,7 +3,9 @@
 
 ## Data
 The dataset includes images from 7 different 3D printers. There are around 15 prints per 3D printer, each of which consists of a number of images taken in quick succession (every 0.5 seconds or so) from the nozzle camera. Every print is either an excellent print or is intended to be produced using extrusion. As a result, each label for a snapshot in a print will be the same.
-![image](sample images/1672773534.457796.jpg)
+
+![image](sample images/1672773534457796.jpg)
+
 Risk of Overfitting - Due to the small number of 3D printers in the dataset, it is easy to create an overfit ML model that performs well on images created by one of these printers but fails miserably when used to make predictions for printers that weren't included in the dataset. Even within the same printer, there is still the risk of overfitting: the model performs well for all the prints in the existing data set, but when a printer does a new print, the model will perform a lot worse.
 
 ## Domain Adaptation
